@@ -1,8 +1,10 @@
  // config iniciais
  const { Console } = require('console')
-const express = require('express')
+ const express = require('express')
  const { default: mongoose } = require('mongoose')
  const app = express()
+
+ const Person = require("./Models/Person")
  
   // Forma de ler JSQ / middlewars
  app.use(
@@ -12,6 +14,14 @@ const express = require('express')
  )
 
      app.use(express.json())
+
+
+  // rotas da API
+
+     app.post('/person', (req, res) => {
+         // rwq.body
+         const {name, salary, approved} = req.body
+     })
 
   // rota inicial / endpoint
      app.get('/', (req, res) =>(
