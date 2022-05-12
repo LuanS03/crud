@@ -1,14 +1,10 @@
 {
+  "author": "Luan da Silva",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon ./index.js localhost 3000"
   },
-
-
-
-
-
-
   "dependencies": {
     "express": "^4.18.1",
     "mongoose": "^6.3.3",

@@ -5,7 +5,7 @@
  const app = express()
 
  const Person = require("./Models/Person")
- 
+
   // Forma de ler JSQ / middlewars
  app.use(
      express.urlencoded({
@@ -21,6 +21,13 @@
      app.post('/person', (req, res) => {
          // rwq.body
          const {name, salary, approved} = req.body
+
+         const person = {
+             name, 
+             salary,
+             approved
+         }
+
      })
 
   // rota inicial / endpoint
